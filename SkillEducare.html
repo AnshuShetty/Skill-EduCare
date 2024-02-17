@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill-Educare</title>
+    <script src="https://kit.fontawesome.com/feaa59adcb.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="./skilleducarefavicon.png" />
+    <link rel="stylesheet" href="./educare.css">
+</head>
+<body>
+        <nav>
+            <div class="navbar" id="content">
+                <div class="logo">
+                    <img src="./skilleducare.png" alt="Skillcare Logo">
+                </div>
+                <div class="nav-ele">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Dashboard</a></li>
+                        <li><a href="">Ranking</a></li>
+                        <li><a href="#contactus">Contact Us</a></li>
+                        <li><i class="fa-solid fa-user"></i></li>
+                        <li><i class="fa-solid fa-moon" id="theme-toggle"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="sidebar" >
+            <div class="list" id="content">
+                <h4>Welcome to Skill EduCare!</h4>
+                <a href="#home">E-learning</a>
+                <a href="#services">Interest</a>
+                <a href="#about">courses</a>
+                <a href="#contact">daily  progress</a>
+                <a href="#contact">Marks</a>
+                <a href="#contact">Take test</a>
+                <a href="#contact">Programming</a>
+                <a href="#contact">Feedback</a>
+                <a href="#contact">Parent Ask</a>
+                <a href="#contact">Parent Help</a>
+                
+            </div>
+        </div>
+        
+            <div class="details">
+                <div class="dashboard">
+                    <div class="profile">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="info">
+
+                        <h1>ANSHU SHETTY</h1>
+                        <p>Nisarga house, daivagudde baddakatte, bantwal</p>
+                        <p>8217406323</p>
+                        <p>Student Universal Id: 2024XXX20031</p>
+                        <p>Ranking: <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+                    </div>
+                </div>
+                <div class="course">
+                    <h3>Activities  <i class="fa-solid fa-chart-line"></i></h3>
+
+                </div>
+            </div>
+            <div class="footer">
+                <footer id="content">
+                    <div class="footlogo">
+                        <img src="./skilleducare.png" alt="Skillcare Logo">
+                    </div>
+                    
+                        <div class="firstcol">
+                            <div class="list">
+                                <p>Courses</p>
+                                <ul>
+                                  <li>Python Basics</li>
+                                  <li>IOT</li>
+                                  <li>Basic Web Development</li>
+                                  <li>Communication</li>
+                                  <li>Writing Skills</li>
+                                </ul>
+                            </div>
+                              <div class="location">
+                                <p>Certificate</p>
+                                  <ul>
+                                    <li>Python   (Beginner)</li>
+                                    <li>basic  web development (Intermediate)</li>
+                                    <li>Intro to IOT</li>
+                                    <li>App Dev</li>
+                                    <li>Applied Science</li>
+                                  </ul>
+                              </div>
+                              <div class="features">
+                                <p>Overview</p>
+                                <ul>
+                                  <li>Search Bus</li>
+                                  <li>Buy Ticket</li>
+                                  <li>Bus date-time</li>
+                                  <li>E-Ticket System</li>
+                                  <li>Payment Verification</li>
+                                </ul>
+                              </div>
+                        </div>
+                        <div class="contact">
+                            <div class="social">
+                                <p>Follow Us</p>
+                                  <div class="soci-ico">
+                                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-google"></i></a>
+                                  </div>
+                              </div>
+                              <div class="help">
+                                <p>For any queries or help Contact</p>
+                            <i class="fa-solid fa-phone"></i> +91 8217406323<br/>
+                            <i class="fa-solid fa-envelope"></i> anshushetty2003@gmail.com
+                              </div>
+                        </div>
+                    <p>&copy; Skill EduCare Pvt Ltd | All Rights Reserved.</p>
+                </footer>
+            </div>
+        <script>
+                const body = document.body;
+const content = document.getElementById('content');
+const themeToggle = document.getElementById('theme-toggle');
+
+// Check local storage for preferred theme
+const storedTheme = localStorage.getItem('theme');
+if (storedTheme) {
+  body.classList.add(storedTheme);
+  content.classList.add(storedTheme);
+  themeToggle.classList.add(storedTheme);
+}
+
+themeToggle.addEventListener('click', () => {
+  const currentTheme = body.classList.contains('dark') ? 'light' : 'dark';
+  body.classList.toggle('dark');
+  content.classList.toggle('dark');
+  themeToggle.classList.toggle('dark');
+
+  // Store the new theme in local storage
+  localStorage.setItem('theme', currentTheme);
+});
+        </script>
+</body>
+</html>

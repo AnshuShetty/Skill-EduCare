@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="shortcut icon" type="image/png" href="./skilleducarefavicon.png" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background:linear-gradient(#0f7fff , #872cffd3),url('https://e1.pxfuel.com/desktop-wallpaper/850/156/desktop-wallpaper-students-school-class.jpg') center/cover no-repeat;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .register-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 500px;
+            text-align: center;
+            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #3498db;
+            width: 50%;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        select{
+            width: 100%; padding: 8px;
+        }
+        #class-grade{
+            width: 50%;
+        }
+        .flex-line{
+            display: flex; justify-content: space-evenly;align-items: center;
+            padding: 10px;
+        }
+        .login-container .logo{
+            width: 100%;height: 50%;
+            display: flex;justify-content: center;align-items: center;
+        }
+        .logo img{
+            height: 30%; width: 30%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="register-container">
+    <div class="logo">
+        <img src="./skilleducare.png" alt="Skillcare Logo">
+    </div>
+    <h2>Register</h2>
+    <form id="registrationForm">
+        <div class="flex-line">
+
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </div>
+        <div class="flex-line">
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+        </div>
+        <div class="flex-line">
+
+            <div class="form-group">
+                <label for="phonenumber">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            </div>
+            <div class="form-group" id="class-grade">
+                <label for="grade">Class:</label>
+                <select name="grade" id="">
+                    <option value="">6th</option>
+                    <option value="">7th</option>
+                    <option value="">8th</option>
+                    <option value="">9th</option>
+                    <option value="">10th</option>
+                    <option value="">11th</option>
+                    <option value="">12th</option>
+                </select>
+            </div>
+        </div>
+        <button type="button" onclick="register()">Register</button>
+    </form>
+</div>
+
+<script>
+    function register() {
+        // Your registration logic goes here
+        alert('Registration successful!');
+    }
+</script>
+
+</body>
+</html>

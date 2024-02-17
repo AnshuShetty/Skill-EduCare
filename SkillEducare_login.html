@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skilleducare Login</title>
+    <script src="https://kit.fontawesome.com/feaa59adcb.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="./skilleducarefavicon.png" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #f4f4f4; */
+            background:linear-gradient(#ff6347 , #ff962cd3),url('https://e1.pxfuel.com/desktop-wallpaper/850/156/desktop-wallpaper-students-school-class.jpg') center/cover no-repeat;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 350px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        .password-container {
+            position: relative;
+        }
+
+        .password-toggle {
+            position: absolute;
+            right: 5px;
+            top: 60%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        button{
+            height: 50px;
+            border: 1px; outline: none;background-color: rgb(14, 172, 14);
+            color: white;border-radius: 5px;cursor:pointer;
+            width: 100%; font-size: 20px;
+            margin-top: 20px;
+        }
+        .login-container .logo{
+            width: 100%;height: 50%;
+            display: flex;justify-content: center;align-items: center;
+        }
+        .logo img{
+            height: 50%; width: 50%;
+        }
+        .social-media-buttons {
+            height:20%; display: flex; justify-content:space-around; align-items:center; 
+        }   
+        .social-media-buttons a{
+            font-size: 30px;
+            background-color: #f5aa1e;width: 50%; color: white;
+            padding: 5px; border-radius: 5px;
+            text-decoration: none;text-transform: none;
+        }
+        .social-media-buttons :hover{
+            background-color: white;
+            color: black;border: 2px solid orange;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <div class="logo">
+        <img src="./skilleducare.png" alt="Skillcare Logo">
+    </div>
+    <h2>Login</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group password-container">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span class="password-toggle" onclick="togglePassword()"><i class="fa-solid fa-eye"></i></span>
+            <a href="javascript:void(0)" style="float:right;">Forgot Password?</a>
+        </div>
+        <button type="submit">Sign in</button>
+        <p>Don't have an account? <a href="">Create One!</a></p>
+        <p>or</p>
+        <div class="social-media-buttons">
+            <a href="" target="_blank"><i class="fa-brands fa-google"></i> Google</a>
+        </div>
+        </div>
+    </form>
+</div>
+
+<script>
+    function togglePassword() {
+        const passwordInput = document.getElementById('password');
+        const passwordToggle = document.querySelector('.password-toggle');
+
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            passwordToggle.textContent = '👁️';
+        } else {
+            passwordInput.type = 'password';
+            passwordToggle.textContent = '👁️';
+        }
+    }
+</script>
+
+</body>
+</html>
