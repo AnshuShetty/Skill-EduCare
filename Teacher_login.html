@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/feaa59adcb.js" crossorigin="anonymous"></script>
-    <title>Login Page</title>
+    <title>Teacher Login Page</title>
+    <link rel="icon" type="image/x-icon" href="./Skill_fav.png">
     <style>
         body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background:linear-gradient(#ff6347 , #ff962cd3),url('https://e1.pxfuel.com/desktop-wallpaper/850/156/desktop-wallpaper-students-school-class.jpg') center/cover no-repeat;
+    background:linear-gradient(#ddff00e6 , #ffee009e),url('https://e1.pxfuel.com/desktop-wallpaper/850/156/desktop-wallpaper-students-school-class.jpg') center/cover no-repeat;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -50,7 +51,7 @@
 }
 
 .left-panel {
-    background: #e7e5e5;
+    background: #feffde;
     color: rgb(0, 0, 0);
     width: 50%;
     text-align: center;
@@ -62,7 +63,7 @@
     border: none;
     border-radius: 20px;
     background: white;
-    color: #ff7e5f;
+    color: #04a717;
     cursor: pointer;
     font-size: 16px;
 }
@@ -93,7 +94,7 @@
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
-    background: #ff7e5f;
+    background: #31b700;
     color: white;
     cursor: pointer;
     font-size: 16px;
@@ -125,10 +126,6 @@
     height: 20px;
     margin-right: 10px;
 }
-form a{
-    font-size: 12px;
-    text-decoration: none;color: #aaa;padding: 10px;text-align: center;
-}
 
     </style>
 </head>
@@ -147,13 +144,9 @@ form a{
             <form>
                 <input type="text" placeholder="Username" required>
                 <input type="password" placeholder="Password" required>
+                <input type="text" placeholder="School Name" required>
                 <button type="submit">Login</button>
-                <a href="./Skilleducare_register.html">Dont have an account? Register</a>
-                <div class="divider">or</div>
-                <button type="button" class="google-button">
-                    <i class="fa-brands fa-google"></i>
-                    Sign in with Google
-                </button>
+                
             </form>
         </div>
     </div>
